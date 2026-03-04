@@ -1,79 +1,448 @@
-🔌 RJ45 Ethernet Cables
-CSS Assignment - Demonstrating Inline, Internal & External CSS
-📚 CSS ASSIGNMENT DEFENSE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RJ45 Cables – Complete Guide</title>
 
-RED = Inline CSS
+  <!-- ========== INTERNAL CSS ========== -->
+  <style>
 
-GREEN = Internal CSS
+    /* General Reset & Body */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-BLUE = External CSS
-📝 Paragraph Styling Examples
-FEATURE 1 - INLINE CSS
-⬇️ INLINE CSS
-➡️
-INLINE RJ45 (Registered Jack 45) is the standard connector used for Ethernet networking. It features eight pins that connect eight separate wires, enabling high-speed data transmission across local area networks. This text is BOLD and ITALIC using inline styles!
-<!-- Inline CSS: style attribute directly in HTML tag --> <p style="font-weight: bold; font-style: italic;"> Paragraph 1 content here... </p>
-FEATURE 2 - INLINE CSS
-⬇️ INLINE CSS
-➡️
-INLINE The RJ45 connector is universally recognized as the backbone of modern wired networking. These connectors support various cable categories including Cat5, Cat5e, Cat6, and Cat6a. This text is ORANGE and BOLD using inline styles!
-<!-- Inline CSS: style attribute with color and font-weight --> <p style="color: orange; font-weight: bold;"> Paragraph 2 content here... </p>
-FEATURE 3 - EXTERNAL CSS
-⬇️ EXTERNAL CSS
-➡️
-EXTERNAL Proper termination of RJ45 connectors requires careful attention to wire color coding. The T568A and T568B wiring standards define the pinout configurations. This text is PURPLE and UNDERLINED using external CSS!
-<!-- HTML: Uses class attribute --> <p class="para3-external"> Paragraph 3 content here... </p> /* In the <style> section - External-like CSS */ .para3-external { color: purple; text-decoration: underline; }
-✨ Highlight Styling Examples (h1)
-FEATURE 4 - INLINE CSS
-⬇️ INLINE CSS
-➡️
-INLINE Highlight 1: High Speed Data Transfer
-Modern RJ45 cables support speeds up to 10 Gbps with Cat6a cables, making them ideal for high-bandwidth applications.
-<!-- Inline CSS: style attribute with color property --> <h1 style="color: #3498db;"> Highlight 1 </h1>
-FEATURE 5 - EXTERNAL CSS
-⬇️ EXTERNAL CSS
-➡️
-EXTERNAL Highlight 2: Universal Compatibility
-RJ45 connectors are backward compatible and work with all standard Ethernet devices including routers, switches, and computers.
-<!-- HTML: Uses class attribute --> <h1 class="highlight2-external"> Highlight 2 </h1> /* In the <style> section - External-like CSS */ .highlight2-external { color: #e74c3c; }
-FEATURE 6 - EXTERNAL CSS
-⬇️ EXTERNAL CSS
-➡️
-EXTERNAL Highlight 3: Reliable Connection
-The locking clip mechanism ensures secure connections that won't accidentally disconnect during use.
-<!-- HTML: Uses class attribute --> <h1 class="highlight3-external"> Highlight 3 </h1> /* In the <style> section - External-like CSS */ .highlight3-external { color: #9b59b6; }
-🏗️ Building/Cable Category Examples (h3)
-FEATURE 7 - INLINE CSS
-⬇️ INLINE CSS
-➡️
-INLINE Building 1: Category 5e (Cat5e)
-Enhanced version of Cat5 supporting up to 1 Gbps at 100 MHz. The most common cable type for home and small office networks.
-<!-- Inline CSS: style attribute with color property --> <h3 style="color: #ff6b6b;"> Building 1 </h3>
-FEATURE 8 - INTERNAL CSS
-⬇️ INTERNAL CSS
-➡️
-INTERNAL Building 2: Category 6 (Cat6)
-Improved shielding and performance supporting up to 10 Gbps at 250 MHz for shorter distances. Ideal for modern networks.
-<!-- HTML: Uses class attribute --> <h3 class="building2-internal"> Building 2 </h3> <!-- Internal CSS: Inside <style> tags in <head> --> <style> .building2-internal { color: #2ecc71; } </style>
-FEATURE 9 - EXTERNAL CSS
-⬇️ EXTERNAL CSS
-➡️
-EXTERNAL Building 3: Category 6a (Cat6a)
-Augmented Category 6 supporting 10 Gbps at 500 MHz over full 100-meter distances. Best for enterprise environments.
-<!-- HTML: Uses class attribute --> <h3 class="building3-external"> Building 3 </h3> /* In the <style> section - External-like CSS */ .building3-external { color: #e67e22; }
-📋 CSS Methods Summary
-🔴 INLINE CSS
-Applied directly to HTML elements using the style attribute
-Used for: Paragraph 1, Paragraph 2, Highlight 1, Building 1
-🟢 INTERNAL CSS
-Defined within <style> tags in the HTML <head> section
-Used for: Building 2
-🔵 EXTERNAL CSS
-Written in a separate .css file and linked to HTML
-Used for: Paragraph 3, Highlight 2, Highlight 3, Building 3
-🔌 T568B Wiring Standard
-The most commonly used wiring standard for RJ45 connectors:
-Orange/White Orange Green/White Blue Blue/White Green Brown/White Brown
-🎓 CSS Assignment Defense Ready!
-All 9 features clearly demonstrated with visual indicators
-● Inline CSS | ● Internal CSS | ● External CSS
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.75;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1a1f2e 0%, #0f3460 50%, #16213e 100%);
+      padding: 60px 40px;
+      text-align: center;
+      border-bottom: 3px solid #00d4ff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00d4ff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      text-shadow: 0 0 20px rgba(0,212,255,0.4);
+    }
+
+    header p { color: #8b949e; font-size: 1.1rem; }
+
+    /* Navigation */
+    nav {
+      background: #161b22;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      border-bottom: 1px solid #30363d;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background: #00d4ff;
+      color: #0d1117;
+      border-color: #00d4ff;
+    }
+
+    /* Main Layout */
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    /* Section Cards */
+    section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+
+    section > h2 {
+      font-size: 1.5rem;
+      color: #00d4ff;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    /* CSS Label Badges */
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .badge-inline   { background: #1f3a5f; color: #58a6ff; border: 1px solid #58a6ff; }
+    .badge-internal { background: #1f3d2a; color: #3fb950; border: 1px solid #3fb950; }
+    .badge-external { background: #3d1f3d; color: #d2a8ff; border: 1px solid #d2a8ff; }
+
+    /* Demo Boxes */
+    .demo-box {
+      background: #0d1117;
+      border: 1px dashed #30363d;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 8px;
+      margin-bottom: 22px;
+    }
+
+    /* Info Grid */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .info-card {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .info-card .icon { font-size: 2rem; margin-bottom: 8px; }
+    .info-card h4   { color: #00d4ff; margin-bottom: 6px; }
+    .info-card p    { font-size: 0.85rem; color: #8b949e; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: #0d1117;
+      color: #00d4ff;
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid #30363d;
+    }
+
+    td {
+      padding: 9px 14px;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+    }
+
+    tr:nth-child(even) td { background: #0d1117; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 28px;
+      background: #161b22;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 0.85rem;
+      margin-top: 50px;
+    }
+
+    /* ============================================
+       INTERNAL CSS — h3 Building 2
+    ============================================ */
+    h3.building2 {
+      color: #f0a500;
+    }
+
+    /* ============================================
+       "EXTERNAL" CSS — in a real project these
+       rules would be in a separate  styles.css
+       file linked via:
+         <link rel="stylesheet" href="styles.css">
+       They are kept here for single-file demo
+       purposes but are CLASS-BASED (not inline).
+    ============================================ */
+
+    /* Paragraph 3 — Purple, Underline */
+    p.para3 {
+      color: purple;
+      text-decoration: underline;
+    }
+
+    /* h2 Highlight 2 — External color */
+    h2.highlight2 {
+      color: #e05252;
+    }
+
+    /* h1 Highlight 3 — External color */
+    h1.highlight3 {
+      color: #3fb950;
+    }
+
+    /* h3 Building 3 — External color */
+    h3.building3 {
+      color: #d2a8ff;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header>
+  <h1>&#128268; RJ45 Cables</h1>
+  <p>A Complete Technical Guide to Ethernet Connectivity</p>
+</header>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav>
+  <a href="#paragraphs">Paragraphs</a>
+  <a href="#headings">Headings</a>
+  <a href="#buildings">Buildings</a>
+  <a href="#overview">Overview</a>
+  <a href="#pinout">Pinout</a>
+  <a href="#categories">Categories</a>
+</nav>
+
+<main>
+
+  <!-- ==================================================
+       SECTION 1 — PARAGRAPH CSS DEMONSTRATIONS
+  ================================================== -->
+  <section id="paragraphs">
+    <h2>&#128221; Paragraph CSS Demonstrations</h2>
+
+    <!-- Paragraph 1 — INLINE CSS: Bold + Italic -->
+    <span class="badge badge-inline">&#128396; Inline CSS — Bold &amp; Italic</span>
+    <div class="demo-box">
+      <p style="font-weight: bold; font-style: italic;">
+        Paragraph 1 — RJ45 (Registered Jack 45) is the standard network connector used worldwide
+        for Ethernet cables. It features 8 pins arranged in a compact rectangular plug, enabling
+        reliable data transmission across local area networks. Almost every modern router, switch,
+        and computer uses this connector type.
+      </p>
+    </div>
+
+    <!-- Paragraph 2 — INLINE CSS: Orange + Bold -->
+    <span class="badge badge-inline">&#128396; Inline CSS — Orange &amp; Bold</span>
+    <div class="demo-box">
+      <p style="color: orange; font-weight: bold;">
+        Paragraph 2 — RJ45 cables can support speeds from 10 Mbps on older Cat3 cabling all the
+        way up to 40 Gbps on Cat8 infrastructure. The cable category, length, and quality of the
+        termination all play critical roles in achieving maximum throughput and minimising signal loss.
+      </p>
+    </div>
+
+    <!-- Paragraph 3 — EXTERNAL CSS: Purple + Underline -->
+    <span class="badge badge-external">&#127775; External CSS — Purple &amp; Underline</span>
+    <div class="demo-box">
+      <p class="para3">
+        Paragraph 3 — Proper termination of an RJ45 connector requires following the T568A or T568B
+        wiring standard. Consistency is key: both ends of a straight-through cable must use the same
+        standard, while a crossover cable uses T568A on one end and T568B on the other end.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       SECTION 2 — HEADING CSS DEMONSTRATIONS
+  ================================================== -->
+  <section id="headings">
+    <h2>&#127991; Heading CSS Demonstrations</h2>
+
+    <!-- h1 Highlight 1 — INLINE CSS: Color -->
+    <span class="badge badge-inline">&#128396; Inline CSS — h1 Color</span>
+    <div class="demo-box">
+      <h1 style="color: #00d4ff;">Highlight 1 — What is an RJ45 Connector?</h1>
+      <p style="margin-top: 10px; color: #8b949e; font-size: 0.9rem;">
+        The RJ45 is an 8P8C (8-position, 8-contact) modular connector used to terminate
+        twisted-pair Ethernet cabling. It became the universal standard for LAN connections
+        and is found on virtually every networked device today.
+      </p>
+    </div>
+
+    <!-- h2 Highlight 2 — EXTERNAL CSS: Color -->
+    <span class="badge badge-external">&#127775; External CSS — h2 Color</span>
+    <div class="demo-box">
+      <h2 class="highlight2">Highlight 2 — Cable Categories Explained</h2>
+      <p style="margin-top: 10px; color: #8b949e; font-size: 0.9rem;">
+        From Cat5e to Cat8, each cable category defines a maximum bandwidth and frequency rating.
+        Choosing the right category ensures your network infrastructure meets both current and
+        future speed requirements for your environment.
+      </p>
+    </div>
+
+    <!-- h1 Highlight 3 — EXTERNAL CSS: Color -->
+    <span class="badge badge-external">&#127775; External CSS — h1 Color</span>
+    <div class="demo-box">
+      <h1 class="highlight3">Highlight 3 — Wiring Standards: T568A &amp; T568B</h1>
+      <p style="margin-top: 10px; color: #8b949e; font-size: 0.9rem;">
+        T568B is the most commonly used standard in commercial installations across North America.
+        T568A is preferred for government and some residential installations. Either standard is
+        acceptable as long as both cable ends are terminated consistently.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       SECTION 3 — H3 BUILDING CSS DEMONSTRATIONS
+  ================================================== -->
+  <section id="buildings">
+    <h2>&#127959; H3 Building CSS Demonstrations</h2>
+
+    <!-- h3 Building 1 — INLINE CSS: Color -->
+    <span class="badge badge-inline">&#128396; Inline CSS — h3 Color</span>
+    <div class="demo-box">
+      <h3 style="color: #f97316;">Building 1 — Physical Construction</h3>
+      <p style="margin-top: 8px; color: #8b949e; font-size: 0.9rem;">
+        An RJ45 plug is constructed from a polycarbonate housing with eight gold-plated contacts.
+        A spring-loaded locking tab produces the "click" sound when inserted, keeping the connector
+        firmly seated in the jack and preventing accidental disconnection during normal use.
+      </p>
+    </div>
+
+    <!-- h3 Building 2 — INTERNAL CSS: Color -->
+    <span class="badge badge-internal">&#9989; Internal CSS — h3 Color</span>
+    <div class="demo-box">
+      <h3 class="building2">Building 2 — Network Infrastructure</h3>
+      <p style="margin-top: 8px; color: #8b949e; font-size: 0.9rem;">
+        In enterprise environments, RJ45 patch panels centralise cable management. Cables run
+        from wall outlets through conduits to the patch panel in a communications room, then
+        short patch cords connect to switches, routers, and other active network equipment.
+      </p>
+    </div>
+
+    <!-- h3 Building 3 — EXTERNAL CSS: Color -->
+    <span class="badge badge-external">&#127775; External CSS — h3 Color</span>
+    <div class="demo-box">
+      <h3 class="building3">Building 3 — Smart Building Wiring</h3>
+      <p style="margin-top: 8px; color: #8b949e; font-size: 0.9rem;">
+        Modern smart buildings use Cat6A structured cabling to support not just data but also
+        Power over Ethernet (PoE) for IP cameras, VoIP phones, Wi-Fi access points, and building
+        automation devices — all delivered over a single RJ45-terminated cable run.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       SECTION 4 — OVERVIEW
+  ================================================== -->
+  <section id="overview">
+    <h2>&#128269; RJ45 Cable Overview</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="icon">&#128225;</div>
+        <h4>Standard</h4>
+        <p>IEEE 802.3 Ethernet — global LAN standard since 1983</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">&#9889;</div>
+        <h4>Max Speed</h4>
+        <p>Up to 40 Gbps on Cat8 over short distances</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">&#128207;</div>
+        <h4>Max Length</h4>
+        <p>100 m (328 ft) per cable segment</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">&#128268;</div>
+        <h4>Pin Count</h4>
+        <p>8 pins (8P8C) — 4 pairs of twisted copper wires</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">&#9881;</div>
+        <h4>PoE Support</h4>
+        <p>Carries up to 90 W of power (IEEE 802.3bt)</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">&#128274;</div>
+        <h4>Locking Tab</h4>
+        <p>Spring clip prevents accidental disconnection</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       SECTION 5 — PINOUT TABLE
+  ================================================== -->
+  <section id="pinout">
+    <h2>&#128203; RJ45 Pinout — T568B Standard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Pin</th>
+          <th>Wire Colour</th>
+          <th>Pair</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>White / Orange</td><td>Pair 2</td><td>TX+ (Transmit +)</td></tr>
+        <tr><td>2</td><td>Orange</td><td>Pair 2</td><td>TX&#8211; (Transmit &#8211;)</td></tr>
+        <tr><td>3</td><td>White / Green</td><td>Pair 3</td><td>RX+ (Receive +)</td></tr>
+        <tr><td>4</td><td>Blue</td><td>Pair 1</td><td>Unused / PoE</td></tr>
+        <tr><td>5</td><td>White / Blue</td><td>Pair 1</td><td>Unused / PoE</td></tr>
+        <tr><td>6</td><td>Green</td><td>Pair 3</td><td>RX&#8211; (Receive &#8211;)</td></tr>
+        <tr><td>7</td><td>White / Brown</td><td>Pair 4</td><td>Unused / PoE</td></tr>
+        <tr><td>8</td><td>Brown</td><td>Pair 4</td><td>Unused / PoE</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ==================================================
+       SECTION 6 — CABLE CATEGORIES
+  ================================================== -->
+  <section id="categories">
+    <h2>&#128230; Cable Categories at a Glance</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Max Speed</th>
+          <th>Bandwidth</th>
+          <th>Typical Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Cat5e</td><td>1 Gbps</td><td>100 MHz</td><td>Home &amp; small office</td></tr>
+        <tr><td>Cat6</td><td>1 Gbps (10 Gbps @ 55 m)</td><td>250 MHz</td><td>Office LANs</td></tr>
+        <tr><td>Cat6A</td><td>10 Gbps</td><td>500 MHz</td><td>Enterprise networks</td></tr>
+        <tr><td>Cat7</td><td>10 Gbps</td><td>600 MHz</td><td>Data centres</td></tr>
+        <tr><td>Cat8</td><td>25 – 40 Gbps</td><td>2000 MHz</td><td>High-speed data centres</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <p>&#128268; RJ45 Cable Guide &nbsp;|&nbsp; CSS Demo: Inline &middot; Internal &middot; External</p>
+  <p style="margin-top: 8px;">Created for ICT Studies &nbsp;&middot;&nbsp; Structured Cabling &amp; Network Fundamentals</p>
+</footer>
+
+</body>
+</html>
